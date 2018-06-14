@@ -22,7 +22,7 @@ function makeGrid(height,width) {
         const sum = newTable.appendChild(newTr);
     }
     const newFind = document.querySelector('#pixelCanvas').querySelectorAll('tr');
-    for (let i =0 ;i<width;i++){
+    for (let i =0 ;i<height;i++){
         for(let x=0;x<width;x++){
             const newTd = document.createElement('td');
             newFind[i].appendChild(newTd);
