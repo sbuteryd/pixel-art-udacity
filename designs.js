@@ -2,6 +2,16 @@
 // Select size input
 //
 // When size is submitted by the user, call makeGrid()
+const clickOn = document.URL;
+const clickSplit = clickOn.split('?');
+const heightWe = clickSplit[1].split('&');
+const getHeight = heightWe[0].split('=');
+const getWeight = heightWe[1].split('=');
+
+const height = getHeight[1];
+const weight = getWeight[1];
+console.log(height,weight);
+
 
 function makeGrid(height,width) {
 
@@ -19,4 +29,4 @@ function makeGrid(height,width) {
         }
     }
 }
-console.log(makeGrid(2,3));
+console.log(makeGrid(height,weight));
