@@ -5,8 +5,12 @@
 
 
 
-const height =  document.querySelector('#inputHeight').value;
-const weight = document.querySelector('#inputWeight').value;
+const clickOn = document.URL;
+const clickSplit = clickOn.split('?');
+const heightWe = clickSplit[1].split('&');
+const height = heightWe[0].split('=');
+const weight = heightWe[1].split('=');
+
 function makeGrid(height,width) {
 
 // Your code goes here!
@@ -27,4 +31,4 @@ function makeGrid(height,width) {
         }
     }
 }
-console.log(makeGrid(height,weight));
+makeGrid(height[1],weight[1]);
