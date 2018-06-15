@@ -26,6 +26,10 @@ function makeGrid(height,width) {
         for(let x=0;x<width;x++){
             const newTd = document.createElement('td');
             newFind[i].appendChild(newTd);
+            const theColor =document.querySelector('#colorPicker');
+            newTd.addEventListener("click",function () {
+                newTd.style.backgroundColor = theColor.value;
+            });
         }
     }
 }
