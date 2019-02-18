@@ -6,7 +6,6 @@ let height
 let  width
 let tableTr;
 let tableTd;
-let count;
 
 //开始代码
 function makeTable(e) {
@@ -30,7 +29,6 @@ function makeTableTrtd(){
             tableTr.appendChild(tableTd)
         }
         fragment.appendChild(tableTr)
-        count +=1
     }
     pixelCanvas.appendChild(fragment)
 
