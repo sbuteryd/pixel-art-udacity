@@ -1,9 +1,9 @@
 const useinput = document.querySelector('.useinput');//提交按钮
 const pixelCanvas = document.querySelector('#pixelCanvas');//表个区域
-const fragment = document.createDocumentFragment();
+const fragment = document.createDocumentFragment();//虚拟 一次性添加
 const other = document.querySelector('#colorPicker'); //得到颜色
-let height
-let  width
+let height;
+let  width;
 let tableTr;
 let tableTd;
 
@@ -28,9 +28,9 @@ function makeTableTrtd(){
             tableTd = document.createElement('td');
             tableTr.appendChild(tableTd)
         }
-        fragment.appendChild(tableTr)
+        fragment.appendChild(tableTr)//虚拟添加
     }
-    pixelCanvas.appendChild(fragment)
+    pixelCanvas.appendChild(fragment)//添加到页面
 
 }
 
@@ -42,5 +42,5 @@ function getColor() {
 }
 
 
-useinput.addEventListener('click',makeTable)
+useinput.addEventListener('click',makeTable);
 
