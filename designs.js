@@ -9,8 +9,8 @@ let tableTd;
 
 //开始代码
 function makeTable(e) {
-    console.log(e.target)
-    e.preventDefault()
+    console.log(e.target);
+    e.preventDefault();
     findelement()//得到width 和 height
     makeTableTrtd()//绘制表格
     getColor()//绘制颜色
@@ -18,7 +18,7 @@ function makeTable(e) {
 //得到width 和 height
 function findelement (){
     height = document.querySelector('#inputHeight').value;
-    width = document.querySelector('#inputWidth').value;
+    width = document.querySelector('#inputWeight').value;
 }
 //绘制表格
 function makeTableTrtd(){
