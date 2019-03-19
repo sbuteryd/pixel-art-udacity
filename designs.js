@@ -2,7 +2,7 @@ const container = document.querySelector('#container');
 
 
 function pixClick(event){
-    console.log(event.target)
+    event.preventDefault()
 }
 
 container.addEventListener('click',pixClick);
